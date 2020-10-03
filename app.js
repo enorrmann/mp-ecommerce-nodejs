@@ -86,7 +86,8 @@ app.post('/buy', function (req, res) {
     // que obtendrás de nuestra API de preferencias (no utilizar “sandbox_init_point”).
     createPreference(preference).then(
         function (response) {
-            res.send(response);
+            res.redirect(response.init_point​)
+            //res.send(response);
         }, function (err) {
             res.send(err);
         });
