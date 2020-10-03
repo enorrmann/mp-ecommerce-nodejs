@@ -74,6 +74,10 @@ app.get('/failure', function (req, res) {
     res.render('mensaje', req.query);
 });
 
+app.get('/notifications', function (req, res) {
+    res.send('ok');
+});
+
 
 app.post('/buy', function (req, res) {
     console.log("buyyyyyyyyy");
@@ -86,7 +90,8 @@ app.post('/buy', function (req, res) {
     // que obtendrás de nuestra API de preferencias (no utilizar “sandbox_init_point”).
     createPreference(preference).then(
         function (response) {
-            res.redirect(response.init_point​)
+            var goTo = response.init_point;
+            res.redirect(goTo);
             //res.send(response);
         }, function (err) {
             res.send(err);
