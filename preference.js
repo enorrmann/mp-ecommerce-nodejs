@@ -43,7 +43,7 @@ var preference = {
         failure: "https://enorrmann-mp-ecommerce-nodejs.herokuapp.com/failure"
     },
     auto_return: "approved",
-    notification_url: "https://enorrmann-mp-ecommerce-nodejs.herokuapp.com/notifications",
+    notification_url: "https://ptsv2.com/t/xvfvh-1601736623/post",
     payment_methods: {
         installments: 6,
         excluded_payment_types: [
