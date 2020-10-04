@@ -65,7 +65,7 @@ app.get('/detail', function (req, res) {
 https://www.tusitio.com/success.php?collection_id=[PAYMENT_ID]&collection_status=approved&external_reference=[EXTERNAL_REFERENCE]&payment_type=credit_card&preference_id=[PREFERENCE_ID]&site_id=[SITE_ID]&processing_mode=aggregator&merchant_account_id=null
 */ 
 app.get('/success', function (req, res) {
-    res.render('mensaje', req.query);
+    res.render('aprobado', req.query);
 });
 app.get('/pending', function (req, res) {
     res.render('mensaje', req.query);
