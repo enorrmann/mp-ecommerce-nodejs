@@ -13,14 +13,14 @@ c) Código postal: 1111
 */
 
 var preference = {
+    external_reference: "enorrmann@gmail.com",
     items: [
         {
             id: "1234",
             title: "Dummy Item",
             description: "Dispositivo móvil de Tienda e-commerce",
             quantity: 1,
-            unit_price: 10.0,
-            external_reference: "enorrmann@gmail.com"
+            unit_price: 10.0            
         }
     ],
     payer: {
